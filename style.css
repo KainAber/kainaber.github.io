@@ -122,45 +122,6 @@ body {
   to   { margin-top: 0%; }
 }
 
-/*
-.afterglow{
-  -webkit-animation: currentglow 0.5s ease;
-  -moz-animation: currentglow 0.5s ease;
-  -ms-animation: currentglow 0.5s ease;
-  -o-animation: currentglow 0.5s ease;
-  animation: currentglow 0.5s ease;
-}
-
-@keyframes currentglow {
-  0% { transition: fill #BB0000; }
-  100% { transition: fill #E0E0E0; }
-}
-
-
-@-moz-keyframes currentglow {
-  0% { transition: fill #BB0000; }
-  100% { transition: fill #E0E0E0; }
-}
-
-
-@-webkit-keyframes currentglow {
-  0% { transition: fill #BB0000; }
-  100% { transition: fill #E0E0E0; }
-}
-
-
-@-ms-keyframes currentglow {
-  0% { transition: fill #BB0000; }
-  100% { transition: fill #E0E0E0; }
-}
-
-
-@-o-keyframes currentglow {
-  0% { transition: fill #BB0000; }
-  100% { transition: fill #E0E0E0; }
-}
-*/
-
 .pagecontentfade{
   -webkit-animation: delayedfadein 0.75s ease; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: delayedfadein 0.75s ease; /* Firefox < 16 */
@@ -227,7 +188,6 @@ a:active {
 }
 
 
-
 .carrots
 {
   vertical-align: top; /* nicht sicher, was das tut */
@@ -236,10 +196,6 @@ a:active {
   margin-right: 45px;
   margin-left: 45px;
 }
-
-
-
-
 
 
 @media screen and (max-width: 600px)
