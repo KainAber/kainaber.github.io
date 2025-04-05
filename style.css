@@ -1,96 +1,35 @@
+/* General body styling */
 body { 
-  background-color: #000000 ;
+  background-color: #000;
   color: #E0E0E0;
-  font-family: Avenir, Helvtica, sans-serif;
-
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-
+  font-family: Avenir, Helvetica, sans-serif;
+  user-select: none; 
   width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+/* Banner styles */
+#centerbanner, #topbanner, #movingbanner {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 80%;
 }
 
 #centerbanner {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 20%;
-  overflow: hidden;
-  text-align: center;
-  font-size: 80%;
-}
-
-#topbanner {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  overflow: hidden;
-  text-align: center;
-  font-size: 80%;
-}
-
-#movingbanner {
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  text-align: center;
-  font-size: 80%;
 }
 
 #pagecontent {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+  margin: 100px auto 0;
   overflow: hidden;
   width: 512px;
 }
 
-.beginningfadein{
-  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 0.5s; /* Firefox < 16 */
-  -ms-animation: fadein 0.5s; /* Internet Explorer */
-  -o-animation: fadein 0.5s; /* Opera < 12.1 */
-  animation: fadein 0.5s;
-}
-
+/* Animation styles */
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-.upwardsmovement{
-  -webkit-animation: upwards 0.5s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: upwards 0.5s ease; /* Firefox < 16 */
-  -ms-animation: upwards 0.5s ease; /* Internet Explorer */
-  -o-animation: upwards 0.5s ease; /* Opera < 12.1 */
-  animation: upwards 0.5s ease;
 }
 
 @keyframes upwards {
@@ -98,144 +37,107 @@ body {
   to   { margin-top: 0%; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes upwards {
-  from { margin-top: 20%; }
-  to   { margin-top: 0%; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes upwards {
-  from { margin-top: 20%; }
-  to   { margin-top: 0%; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes upwards {
-  from { margin-top: 20%; }
-  to   { margin-top: 0%; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes upwards {
-  from { margin-top: 20%; }
-  to   { margin-top: 0%; }
-}
-
-.pagecontentfade{
-  -webkit-animation: delayedfadein 0.75s ease; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: delayedfadein 0.75s ease; /* Firefox < 16 */
-  -ms-animation: delayedfadein 0.75s ease; /* Internet Explorer */
-  -o-animation: delayedfadein 0.75s ease; /* Opera < 12.1 */
-  animation: delayedfadein 0.75s ease;
-}
-
 @keyframes delayedfadein {
   0%, 66% { opacity: 0; }
   100% { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes delayedfadein {
-  0%, 66% { opacity: 0; }
-  100% { opacity: 1; }
+.beginningfadein {
+  animation: fadein 0.5s ease;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
+.upwardsmovement {
+  animation: upwards 0.5s ease;
+}
+
+.pagecontentfade {
+  animation: delayedfadein 0.75s ease;
+}
+
+/* Vendor-prefixed keyframes for Safari, older browsers */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
 @-webkit-keyframes delayedfadein {
   0%, 66% { opacity: 0; }
   100% { opacity: 1; }
 }
 
-/* Internet Explorer */
-@-ms-keyframes delayedfadein {
-  0%, 66% { opacity: 0; }
-  100% { opacity: 1; }
+.beginningfadein, .upwardsmovement, .pagecontentfade {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-timing-function: ease;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes delayedfadein {
-  0%, 66% { opacity: 0; }
-  100% { opacity: 1; }
+.beginningfadein {
+  -webkit-animation-name: fadein;
 }
 
+.upwardsmovement {
+  -webkit-animation-name: upwards;
+}
+
+.pagecontentfade {
+  -webkit-animation-name: delayedfadein;
+  -webkit-animation-duration: 0.75s;
+}
+
+/* Link styles */
 a {
-  -o-transition:.2s;
-  -ms-transition:.2s;
-  -moz-transition:.2s;
-  -webkit-transition:.2s;
-  transition:.2s;
+  transition: 0.2s;
 }
 
-a:link {
-  color: #E0E0E0;
-  text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
   color: #E0E0E0;
   text-decoration: none;
 }
 
 a:hover {
   color: #DD1111;
-  text-decoration: none;
 }
 
 a:active {
-  color: pink;
-  text-decoration: none;
+  color: #DD1111;
 }
 
-
-.carrots
-{
-  vertical-align: top; /* nicht sicher, was das tut */
+/* Carrots and responsive styling */
+.carrots {
   display: inline-block;
   max-width: 160px;
-  margin-right: 45px;
-  margin-left: 45px;
+  margin: 0 45px;
+  vertical-align: top;
 }
 
-
-@media screen and (max-width: 600px)
-{
-  .carrots
-  {
-    max-width: 100%;
-  }
-}
-
-
-path { transition: fill .25s ease; }
-/* set fill for before and for during hover */
-
-.svege{
+/* SVG styling */
+.svege, .greysvege, .currentsvege {
   height: 100px;
 }
 
-.svege path{
+.svege path, .greysvege, .currentsvege {
   fill: #E0E0E0;
 }
 
-.svege:hover path{
+.svege:hover path {
   fill: #BB0000;
 }
 
 .greysvege {
-  height: 100px;
   fill: #4D4D4D;
 }
 
 .currentsvege {
-  height: 100px;
   fill: #BB0000;
 }
 
-
+/* List styles */
 ul {
   list-style: none;
-  margin-left: 0;
   padding-left: 0;
 }
 
