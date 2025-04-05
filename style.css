@@ -1,0 +1,294 @@
+body { 
+  background-color: #000000 ;
+  color: #E0E0E0;
+  font-family: Avenir, Helvtica, sans-serif;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#centerbanner {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 80%;
+}
+
+#topbanner {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  overflow: hidden;
+  text-align: center;
+  font-size: 80%;
+}
+
+#movingbanner {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 80%;
+}
+
+#pagecontent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  overflow: hidden;
+  width: 512px;
+}
+
+.beginningfadein{
+  -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s; /* Firefox < 16 */
+  -ms-animation: fadein 0.5s; /* Internet Explorer */
+  -o-animation: fadein 0.5s; /* Opera < 12.1 */
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.upwardsmovement{
+  -webkit-animation: upwards 0.5s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: upwards 0.5s ease; /* Firefox < 16 */
+  -ms-animation: upwards 0.5s ease; /* Internet Explorer */
+  -o-animation: upwards 0.5s ease; /* Opera < 12.1 */
+  animation: upwards 0.5s ease;
+}
+
+@keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes upwards {
+  from { margin-top: 20%; }
+  to   { margin-top: 0%; }
+}
+
+/*
+.afterglow{
+  -webkit-animation: currentglow 0.5s ease;
+  -moz-animation: currentglow 0.5s ease;
+  -ms-animation: currentglow 0.5s ease;
+  -o-animation: currentglow 0.5s ease;
+  animation: currentglow 0.5s ease;
+}
+
+@keyframes currentglow {
+  0% { transition: fill #BB0000; }
+  100% { transition: fill #E0E0E0; }
+}
+
+
+@-moz-keyframes currentglow {
+  0% { transition: fill #BB0000; }
+  100% { transition: fill #E0E0E0; }
+}
+
+
+@-webkit-keyframes currentglow {
+  0% { transition: fill #BB0000; }
+  100% { transition: fill #E0E0E0; }
+}
+
+
+@-ms-keyframes currentglow {
+  0% { transition: fill #BB0000; }
+  100% { transition: fill #E0E0E0; }
+}
+
+
+@-o-keyframes currentglow {
+  0% { transition: fill #BB0000; }
+  100% { transition: fill #E0E0E0; }
+}
+*/
+
+.pagecontentfade{
+  -webkit-animation: delayedfadein 0.75s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: delayedfadein 0.75s ease; /* Firefox < 16 */
+  -ms-animation: delayedfadein 0.75s ease; /* Internet Explorer */
+  -o-animation: delayedfadein 0.75s ease; /* Opera < 12.1 */
+  animation: delayedfadein 0.75s ease;
+}
+
+@keyframes delayedfadein {
+  0%, 66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes delayedfadein {
+  0%, 66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes delayedfadein {
+  0%, 66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes delayedfadein {
+  0%, 66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes delayedfadein {
+  0%, 66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a {
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+
+a:link {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #DD1111;
+  text-decoration: none;
+}
+
+a:active {
+  color: pink;
+  text-decoration: none;
+}
+
+
+
+.carrots
+{
+  vertical-align: top; /* nicht sicher, was das tut */
+  display: inline-block;
+  max-width: 160px;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+{
+  .carrots
+  {
+    max-width: 100%;
+  }
+}
+
+
+path { transition: fill .25s ease; }
+/* set fill for before and for during hover */
+
+.svege{
+  height: 100px;
+}
+
+.svege path{
+  fill: #E0E0E0;
+}
+
+.svege:hover path{
+  fill: #BB0000;
+}
+
+.greysvege {
+  height: 100px;
+  fill: #4D4D4D;
+}
+
+.currentsvege {
+  height: 100px;
+  fill: #BB0000;
+}
+
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: "· ";
+  padding-right: 5px;
+}
