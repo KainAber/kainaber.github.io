@@ -1,11 +1,16 @@
 /* General body styling */
-body { 
+body {
   background-color: #000;
   color: #E0E0E0;
   font-family: Avenir, Helvetica, sans-serif;
-  user-select: none; 
-  width: 600px;
-  margin: 0 auto;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
@@ -28,9 +33,9 @@ body {
 }
 
 #pagecontent {
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   overflow: hidden;
-  width: 512px;
+  width: 85%;
 }
 
 /* Animation styles */
@@ -116,14 +121,14 @@ a:active {
 /* Carrots and responsive styling */
 .carrots {
   display: inline-block;
-  max-width: 160px;
-  margin: 0 45px;
+  margin: 0 7%;
   vertical-align: top;
 }
 
 /* SVG styling */
 .svege, .greysvege, .currentsvege {
   height: 100px;
+
 }
 
 .svege path, .greysvege, .currentsvege {
@@ -156,4 +161,11 @@ li {
 li:before {
   content: "· ";
   padding-right: 5px;
+}
+
+@media (hover: none) {
+  /* Styles for devices that can't hover (e.g., mobile) */
+  .carrots {
+    margin: 0 5%;
+  }
 }
