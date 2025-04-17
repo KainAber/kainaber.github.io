@@ -59,11 +59,13 @@ body {
 }
 
 .upwardsmovement {
-  animation: upwards 0.5s ease;
+  /* animation: upwards 0.5s ease; */
 }
 
 .pagecontentfade {
+  /*
   animation: delayedfadein 0.75s ease;
+  */
 }
 
 /* Vendor-prefixed keyframes for Safari, older browsers */
@@ -92,12 +94,14 @@ body {
 }
 
 .upwardsmovement {
-  -webkit-animation-name: upwards;
+  /* -webkit-animation-name: upwards; */
 }
 
 .pagecontentfade {
+  /*
   -webkit-animation-name: delayedfadein;
   -webkit-animation-duration: 0.75s;
+  */
 }
 
 /* Link styles */
@@ -133,6 +137,10 @@ a:active {
 
 .svege path, .greysvege, .currentsvege {
   fill: #E0E0E0;
+}
+
+.svege path {
+  transition: fill 0.2s ease;
 }
 
 .svege:hover path {
