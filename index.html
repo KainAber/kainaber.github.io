@@ -9,7 +9,20 @@
     <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
 </head>
 <body>
-<div id="centerbanner", class="beginningfadein">
+
+<a id="move"></a>
+
+<style>
+  /* When #move is targeted */
+
+  #move:target ~ .downwardsmovement {
+    animation: downwards 0.5s ease;
+    -webkit-animation-name: downwards;
+  }
+}
+</style>
+
+<div id="centerbanner", class="beginningfadein downwardsmovement">
 
 <br><br>
 
@@ -262,8 +275,6 @@
 
 
 </div>
-
-
 
 </body>
 </html>
