@@ -9,7 +9,25 @@
     <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
 </head>
 <body>
-<div id="topbanner">
+
+<a id="move"></a>
+
+<style>
+  /* When #move is targeted */
+
+  #move:target ~ .upwardsmovement {
+    animation: upwards 0.5s ease;
+    -webkit-animation-name: upwards;
+  }
+
+  #move:target ~ .beginningfadein {
+  animation: delayedfadein 0.75s ease;
+  -webkit-animation-name: delayedfadein;
+  -webkit-animation-duration: 0.75s;
+}
+</style>
+
+<div id="topbanner", class="upwardsmovement">
 
   <br><br>
 
@@ -202,18 +220,18 @@
 
   <div class="carrots">
 
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-      <svg class="currentsvege" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 19.7 60.6" style="enable-background:new 0 0 19.7 60.6;" xml:space="preserve">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg class="currentsvege" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 19.7 60.6" style="enable-background:new 0 0 19.7 60.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
   .st1{display:inline;}
 </style>
-        <g id="Ebene_2_1_" class="st0">
+      <g id="Ebene_2_1_" class="st0">
 	<rect x="-208" y="-72.6" class="st1" width="258" height="59.1"/>
 </g>
-        <g id="Ebene_1_1_">
+      <g id="Ebene_1_1_">
 	<g>
 		<g>
 			<g>
@@ -254,15 +272,14 @@
 	</g>
 </g>
 </svg>
-      <br>
-      <br>
+    <br>
+    <br>
     <span style="color: #DD1111;">Contact</span>
 
   </div>
 
 
 </div>
-
 
 <div id="pagecontent", class="beginningfadein">
   <ul>
